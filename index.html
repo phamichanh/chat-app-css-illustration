@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Bootstrap Script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+</head>
+<body>
+<section id="main-content">
+  <div class="bg" id="bg-left"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+
+        <div id="phone-screen">
+          <!-- Chat header -->
+          <div id="chat-header">
+            <div class="cut-header"></div>
+            <div id="header-bar">
+              <div id="btn-back">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+              </div>
+
+              <table id="receiver">
+                <tbody>
+                  <tr>
+                    <td rowspan="2">
+                      <img class="receiver-avatar" src="images/avatar.jpg" alt="avatar">
+                    </td>
+
+                    <td>
+                      <h4 class="receiver-name">Samuel Green</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="receiver-status">Available to Walk</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div id="ver-three-dots">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chat body -->
+          <div class="scroll-body">
+            <div id="chat-body">
+              <div class="chat-row msg-recived">
+                <p class="border-styles">That sounds great. I’d be happy with that.</p>
+              </div>
+              <div class="chat-row msg-recived">
+                <p class="border-styles">Could you send over some pictures of your dog, please?</p>
+              </div>
+              <div class="chat-row msg-sent">
+                <div class="img-list align-content">
+                  <img src="images/dog-image-1.jpg" alt="dog image 1">
+                  <img src="images/dog-image-2.jpg" alt="dog image 2">
+                  <img src="images/dog-image-3.jpg" alt="dog image 3">
+                </div>
+              </div>
+              <div class="chat-row msg-sent">
+                <p class="border-styles align-content">Here are a few pictures. She’s a happy girl!</p>
+              </div>
+              <div class="chat-row msg-sent">
+                <p class="border-styles align-content">Can you make it?</p>
+              </div>
+              <div class="chat-row msg-recived">
+                <p class="border-styles">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+              </div>
+              <div class="chat-row msg-recived">
+                <div class="price-tag border-styles">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="price" value="$29">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">30 minute walk</span>
+                    <span class="price">$29</span>
+                  </label>
+                </div>
+              </div>
+              <div class="chat-row msg-recived">
+                <div class="price-tag border-styles">
+                  <label class="radio">
+                    <span class="radio__input">
+                      <input type="radio" name="price" value="$49">
+                      <span class="radio__control"></span>
+                    </span>
+                    <span class="radio__label">1 hour walk</span>
+                    <span class="price">$49</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chat footer -->
+          <div id="chat-footer">
+            <input class="input-msg" type="text" name="msg-content" placeholder="Type a message…">
+            <button class="btn-sent" type="button" name="button">&#8250;</button>
+          </div>
+        </div>
+
+      </div>
+
+<!-- 248 * 506 -->
+    <div class="col-md-6">
+      <h1>Simple booking</h1>
+      <p>
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.
+      </p>
+    </div>
+
+    </div>
+
+    <div class="row">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Pham Ich Anh</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="bg" id="bg-right"></div>
+</section>
+
+</body>
+</html>
