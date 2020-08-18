@@ -4,6 +4,7 @@
   padding: 5px 20px 5px 20px;
   margin: 0px;
   width: 100%;
+  z-index: 1;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -16,28 +17,35 @@ body {
 
 #main-content {
   padding: 10% 0;
+  position: relative;
+  /* background-image: url("../design/mobile-design.jpg");
+  background-position: top left;
+  background-repeat: no-repeat; */
 }
 
 .bg {
   position: absolute;
+  z-index: 0;
 }
 
 #bg-left {
-  width: 30%;
-  height: 87.5%;
+  width: 40%;
+  height: 86%;
   top: 0;
-  left: 0;
+  left: -11%;
   background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 90%;
+  border-bottom-right-radius: 65%;
 }
 
 #bg-right {
-  width: 23%;
+  width: 30%;
   height: 85%;
   bottom: 0;
-  right: 0;
+  right: -7%;
   background-image: linear-gradient(hsl(264, 33%, 97%), hsl(290, 43%, 97%));
+  border-top-left-radius: 50%;
+  border-top-right-radius: 35%;
 }
 
 /* Chat screen styles */
@@ -47,8 +55,9 @@ body {
   border: 10px solid #FFF;
   background-color: rgb(250, 245, 250);
   border-radius: 30px;
-  box-shadow: 0px 0px 20px 5px hsl(271, 36%, 24%);
+  box-shadow: 0px 0px 5px 0px hsl(271, 36%, 24%);
   overflow: hidden;
+  margin-left: 36%;
 }
 
 #chat-header {
@@ -204,7 +213,7 @@ body {
 }
 
 .msg-recived .border-styles {
-  border-radius: 8px 8px 8px 4px;
+  border-radius: 10px 10px 10px 4px;
 }
 
 /* Message sent */
@@ -213,7 +222,7 @@ body {
 }
 
 .msg-sent .border-styles {
-  border-radius: 8px 8px 4px 8px;
+  border-radius: 10px 10px 4px 10px;
 }
 
 .msg-sent p {
@@ -326,6 +335,72 @@ body {
 
 .btn-sent:focus {
   outline: none;
+}
+
+
+
+/* Introduction */
+.intro-content h1 {
+  color: hsl(271, 36%, 24%);
+  margin-top: 31%;
+  margin-bottom: 23px;
+}
+
+.intro-content p {
+  color: hsl(270, 7%, 64%);
+  width: 80%;
+  line-height: 1.8;
+}
+
+@media only screen and (max-width: 991px) {
+  /* Chat screen styles */
+  #phone-screen {
+    margin: 0 auto;
+  }
+
+  /* Introduction */
+  .intro-content p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* Background */
+  #main-content {
+    padding: 16% 5%;
+  }
+
+  #bg-left {
+    width: 50%;
+    height: 55%;
+    top: 0;
+    left: 0%;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 100%;
+  }
+
+  #bg-right {
+    width: 50%;
+    height: 55%;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(hsl(264, 33%, 97%), hsl(290, 43%, 97%));
+    border-top-left-radius: 100%;
+    border-top-right-radius: 0%;
+  }
+
+
+  /* Introduction */
+  .intro-content {
+    text-align: center;
+  }
+
+  .intro-content h1 {
+    margin-top: 70px;
+  }
+
 }
 
 /*
